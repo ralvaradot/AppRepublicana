@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRepublicana.MenuPage"
+             Title="Menu Principal">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" 
+                               ></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" 
+                         Grid.Row="0"
+                         BackgroundColor="DarkBlue"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+            </StackLayout>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="30"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="1" Grid.Row="0" VerticalOptions="Center">
+                    <Button x:Name="BtnUno" Text="Ciudades" 
+                        Clicked="BtnUno_Clicked"
+                        ></Button>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Grid.Row="0" VerticalOptions="Center">
+                    <Button x:Name="BtnDos" Text="Clientes" 
+                            Clicked="BtnDos_Clicked"
+                        ></Button>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                    <Button x:Name="BtnTres" Text="Productos" 
+                            Clicked="BtnTres_Clicked"
+                        ></Button>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Grid.Row="1" VerticalOptions="Center">
+                    <Button x:Name="BtnCuatro" Text="Pedidos" 
+                            Clicked="BtnCuatro_Clicked"
+                        ></Button>
+                </StackLayout>
+            </Grid>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Grid.Row="2">
+                <Label Text="Universidad Republicana - Bogota - 2018"></Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

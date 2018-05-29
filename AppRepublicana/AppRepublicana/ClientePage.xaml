@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRepublicana.ClientePage"
+             Title="Cliente">
+    <ContentPage.Content>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="NIT: "
+                       Grid.Row="0" Grid.Column="0"
+                       ></Label>
+            <Entry x:Name="ENit" Placeholder="Nit del cliente"
+                       Grid.Row="0" Grid.Column="1"
+                       Keyboard="Numeric"></Entry>
+
+            <Label Text="Razon Social: "
+                       Grid.Row="1" Grid.Column="0"
+                       ></Label>
+            <Entry x:Name="ERazon" Placeholder="Razon social"
+                       Grid.Row="1" Grid.Column="1"
+                       Keyboard="Text"></Entry>
+
+            <Label Text="Contacto: "
+                   Grid.Row="2" Grid.Column="0"
+                   ></Label>
+            <Entry x:Name="EContacto" Placeholder="Nombre contacto"
+                       Grid.Row="2" Grid.Column="1"
+                       Keyboard="Text"></Entry>
+
+            <Label Text="Email: "
+                       Grid.Row="3" Grid.Column="0"
+                       ></Label>
+            <Entry x:Name="EEmail" Placeholder="Correo electronico"
+                       Grid.Row="3" Grid.Column="1"
+                       Keyboard="Email"></Entry>
+
+            <Label Text="Celular: "
+                       Grid.Row="4" Grid.Column="0"
+                       ></Label>
+            <Entry x:Name="ECelular" Placeholder="Numero del celular"
+                       Grid.Row="4" Grid.Column="1"
+                       ></Entry>
+
+            <Button x:Name="BtnGrabar" Text="Guardar"
+                        Grid.Row="5" Grid.Column="1"
+                    ></Button>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppRepublicana"
+             x:Class="AppRepublicana.MainPage"
+             Title="App Universidad Republicana">
+
+    <StackLayout Padding="20">
+        <!-- Place new controls here -->
+        <!-- Titulo -->
+        <StackLayout Orientation="Horizontal" BackgroundColor="Blue">
+            <Label Text="Ingreso al sistema"
+               HorizontalOptions="CenterAndExpand"
+               TextColor="White"
+                   FontSize="Large"
+               ></Label>
+        </StackLayout>
+        
+        <!--Cuerpo del formulario -->
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Usuario"></Label>
+            <Entry x:Name="eUsuario" Placeholder="Digite su Usuario"
+                   Keyboard="Email">
+            </Entry>
+            <Label Text="Clave"></Label>
+            <Entry x:Name="eClave" Placeholder="Digite su Clave"
+                   Keyboard="Numeric"
+                   ></Entry>
+            <Button x:Name="BtnAutenticar" Text="Autenticar"
+                    BorderRadius="20" BorderWidth="40"
+                    BackgroundColor="LightGreen"
+                    Clicked="BtnAutenticar_Clicked"
+                    ></Button>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
